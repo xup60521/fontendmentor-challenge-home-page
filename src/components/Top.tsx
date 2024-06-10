@@ -69,7 +69,7 @@ function TopContent(props: Content) {
         return data[thisPathIndex - 1].path;
     }
     return (
-        <div className="w-full flex flex-col lg:flex-row relative h-2/3">
+        <div className="w-full flex flex-col lg:flex-row relative lg:h-2/3">
             <div className="lg:h-full lg:w-7/12 w-full h-fit flex-shrink-0 relative">
                 <img
                     src={desktopImage}
@@ -81,10 +81,10 @@ function TopContent(props: Content) {
                     alt="mobile-image-1"
                     className="lg:hidden w-full h-fit"
                 />
-                <div className="absolute lg:right-0 lg:bottom-0 lg:translate-x-[100%]">
+                <div className="absolute right-0 bottom-0 lg:translate-x-[100%]">
                     <button
                         onMouseDown={() => backwardRef.current?.click()}
-                        className="aspect-square transition hover:bg-dark_gray hover:text-white font-league text-3xl w-[4vw] bg-black text-very_dark-gray content-center text-center"
+                        className="aspect-square transition hover:bg-dark_gray hover:text-white font-league text-3xl lg:w-[4vw] w-12 bg-black text-very_dark-gray content-center text-center"
                     >
                         <Link
                             ref={backwardRef}
@@ -97,7 +97,7 @@ function TopContent(props: Content) {
                     </button>
                     <button
                         onMouseDown={() => forwardRef.current?.click()}
-                        className="aspect-square transition hover:bg-dark_gray hover:text-white font-league text-3xl w-[4vw] bg-black text-very_dark-gray content-center text-center"
+                        className="aspect-square transition hover:bg-dark_gray hover:text-white font-league text-3xl lg:w-[4vw] w-12 bg-black text-very_dark-gray content-center text-center"
                     >
                         <Link
                             ref={forwardRef}
@@ -110,7 +110,7 @@ function TopContent(props: Content) {
                     </button>
                 </div>
             </div>
-            <div className="lg:h-full h-fit flex flex-col justify-center items-center flex-shrink px-24">
+            <div className="lg:h-full h-fit flex flex-col justify-center items-center flex-shrink lg:px-24 lg:py-0 px-8 py-16">
                 <h1 className="text-[2.5rem] tracking-tight font-league font-bold leading-10">
                     {title}
                 </h1>

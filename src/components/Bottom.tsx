@@ -5,7 +5,7 @@ export default function Bottom() {
     return (
         <div className="w-full flex flex-col lg:flex-row h-1/3">
             <img src={LeftImage} alt="about image dark" className="bg-cover object-cover lg:w-[29vw] flex-shrink-0" />
-            <div className="flex-grow flex flex-col justify-center px-12">
+            <div className="flex-grow flex flex-col justify-center lg:px-12 px-8 lg:py-0 py-12">
                 <h3 className="text-left text-sm tracking-[0.15rem] font-league font-bold py-2">{"About our furniture".toUpperCase()}</h3>
                 <p className="text-xs leading-6 font-league">
                     Our multifunctional collection blends design and function to
