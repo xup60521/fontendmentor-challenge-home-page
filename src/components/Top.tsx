@@ -48,7 +48,7 @@ export default function Top() {
     const [openMenu, setOpenMenu] = useState<Menu>("");
 
     return (
-        <div className="w-full flex flex-col min-h-screen lg:flex-row relative lg:h-2/3 lg:min-h-0 h-fit">
+        <>
             <nav className="absolute z-50 lg:flex hidden gap-8 lg:py-16 lg:px-16 items-center">
                 <img src={Logo} alt="logo" className="h-fit mr-8" />
                 <button className="text-white font-league text-lg font-medium group relative">
@@ -149,7 +149,7 @@ export default function Top() {
                 </div>
                 <DisplayTitleAndDescription page={page} />
             </div>
-        </div>
+        </>
     );
 }
 
